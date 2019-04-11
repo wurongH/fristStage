@@ -1,0 +1,330 @@
+.w {   /*版心公共类*/
+	width: 1190px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.fl {    /*浮动公共类*/
+	float: left;
+}
+.fr {
+	float: right;
+}
+  /* 清除浮动*/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: block;  /* 触发bfc 防止外边距合并 */
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+@font-face {  /* 声明字体 */
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8qhwk5');
+  src:  url('../fonts/icomoon.eot?8qhwk5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8qhwk5') format('truetype'),
+    url('../fonts/icomoon.woff?8qhwk5') format('woff'),
+    url('../fonts/icomoon.svg?8qhwk5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+	text-decoration: none;  /* 取消下划线*/
+}
+a:hover {
+	color: #466de3 !important;
+}
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
+	margin: 0;
+	padding: 0;
+}
+input,button {
+	border: 0;
+	outline: none;  /* 取消轮廓边框 */
+}
+ul {
+	list-style: none;	
+}
+body {
+	background-color: #f0f0f0;
+}
+/*...............................................................................................................................*/
+/*...............................................................................................................................*/
+/*...............................................................................................................................*/
+/*头部品牌部分start*/
+.pinpai {
+	background-color: #f7f7f7;
+}
+.pinpai .w {
+	font-size: 12px;
+	line-height: 30px;
+}
+.pinpai a ,.shux{
+	color: #999;
+}
+.pinpai .shux {
+	margin: 0 14px;
+}
+/*头部品牌部分end*/
+
+/*头部分*/
+.header {
+	width: 100%;
+	background-color: #fff;
+}
+.header_item {
+	height: 74px;
+}
+/*左边logo部分start*/
+.logo  {
+	margin-top: 22px;
+	left: 0;
+}
+/*左边logo部分end*/
+
+/*右边登录部分start*/
+.login {
+	margin-top: 26px;
+	right: 0px;
+}
+.login li {
+	float: left;
+	margin: 0 10px;
+	font-size: 14px;
+}
+.login li a {
+	color: #000;	
+}
+/*右边登录部分end*/
+
+.header_nav {
+	height: 42px;
+}
+/*全部学科部分start*/
+/*.ats {
+	width: 230px;
+	background-color: #3492fd;
+	border-radius: 6px 6px 0 0;
+
+}
+.ats a {
+	display: inline-block;
+	line-height: 42px;
+	padding: 0 80px;
+	color: #000;
+}*/
+/*全部学科部分end*/
+
+/* 小导航栏部分start*/
+.navitems {
+	width: 720px;
+	line-height: 42px;
+	margin-left: 230px;
+}
+.navitems li {
+	float: left;
+	padding-left: 42px;
+}
+.navitems li a {
+	color: #000;	
+}
+.navitems i {
+	font-family: "icomoon";
+	font-style: normal;  
+	color: #000;
+	font-size: 6px;
+}
+
+/* 小导航栏部分end*/
+
+/* 搜索框 start*/
+.search {
+	width: 240px;
+	height: 30px;
+}
+.search input {
+	width: 166px;
+	height: 30px;
+	border: 1px solid #eee;
+	float: left;
+	font-size: 14px;
+	padding-left: 1em;
+	border-radius: 16px 0 0 16px;
+}
+.search button {
+	width: 58px;
+	height: 32px;
+	border-radius: 0 16px 16px 0;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+.search button i {
+	font-family: 'icomoon';
+	font-style: normal;
+	color: #ccc;
+}
+/* 搜索框 end*/
+
+/*banner部分start*/
+.banner {
+	width: 100%;
+	background-color: #383f8f;
+}
+.banner_in {
+	position: relative;
+}
+.banner a {
+	display: block;
+}
+.slidebar {
+	height: 470px;
+	width: 230px;
+	border-radius: 6px;
+	background: rgba(0, 0, 0, 0.5);  /*盒子背景半透明*/ 
+	position: absolute;
+	top: -42px;
+	left: 0px;
+}
+.slidebar li:first-child a {
+	background-color: #3492fd;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #000;
+	border-radius: 6px 6px 0 0;
+}
+.slidebar li a {
+	color: #fffff3;
+	font-size: 14px;
+	padding: 0 40px;
+	display: block;
+	line-height: 42px; 
+}
+.slidebar a span {
+	float: right;
+	font-family: arial; 
+}
+.itembox {
+	width: 800px;
+	height: 324px;	
+	background-color: #eee;
+	background: rgba(0, 0, 0, 0.4);  /*盒子背景半透明*/ 
+	position: absolute;
+	top: 40px;
+	left: 230px;
+	display: none;   /*隐藏对象*/
+}
+.slidebar li:hover .itembox {
+	display: block;   /*对象为快元素*/
+}
+/*banner部分end*/
+
+/*200元抵用券start*/
+.coupan {
+	margin-top: 14px;
+	width: 950px;
+	height: 90px;
+	background-color: #fff;
+	border-radius: 6px;
+	position: relative;
+}
+.coupan li { 
+	float: left;
+	width: 237px;
+}
+.coupan li h5 {
+	position: absolute;
+	top: 25px;
+	left: 28px;
+	width: 50px;
+	height: 50px;
+	background: url(../images/infos.png) no-repeat;
+	text-indent: -999em;
+}
+.coupan li:nth-child(2) h5 {
+	top: 25px;
+	left: 265px;
+}
+.coupan li:nth-child(3) h5 {
+	top: 25px;
+	left: 502px;
+}
+.coupan li:nth-child(4) h5 {
+	top: 25px;
+	left: 739px;
+}
+.coupan li p {
+	margin-left: 74px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+/*200元抵用券end*/
+
+/*<!-- 底部分 -->*/
+footer {
+	background-color: #333;
+	height: 298px;
+	margin-top: 20px;
+	color: #ccc;
+}
+.indexfooter {
+	height: 210px;
+	border-bottom: 1px solid #393e46;
+}
+.indexfooter h1 {
+	font-size: 18px;
+	padding-top: 54px;
+}
+/*博学谷云课堂*/
+.classroom {
+	width: 482px;
+	height: 210px;
+}
+.classroom p {
+	font-size: 12px;
+	line-height: 26px;
+	padding-top: 22px;
+} 
+/*关注我们*/
+.guanzhu {
+	width: 110px;
+	height: 210px;
+}
+.guanzhu a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-top: 20px;
+} 
+.guanzhu .weibo a {
+	background: url(../images/weibo.png) no-repeat;
+}
+.guanzhu .weix a {
+	background: url(../images/weixin.png) no-repeat;
+}
+/*友情链接*/
+.lianjie {
+	width: 516px;
+	height: 210px;
+}
+.lianjie li a {
+	float: left;
+	padding: 15px 15px 15px 0;
+	color: #ccc;
+}
+/*关于我们、版权*/
+.copyright p {
+	margin: 26px 0 0 438px;
+	color: 
+}
+.copyright p a {
+	color: #ccc;
+	font-size: 14px;
+}
+.end {
+	margin: 20px 0 0 350px;
+	font-size: 12px;
+}
